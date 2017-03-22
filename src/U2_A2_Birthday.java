@@ -60,6 +60,11 @@ public class U2_A2_Birthday extends javax.swing.JFrame {
                 jLabel1MouseMoved(evt);
             }
         });
+        jLabel1.addMouseWheelListener(new java.awt.event.MouseWheelListener() {
+            public void mouseWheelMoved(java.awt.event.MouseWheelEvent evt) {
+                jLabel1MouseWheelMoved(evt);
+            }
+        });
 
         jLabel2.setFont(new java.awt.Font("Lint McCree Intl BB", 0, 14)); // NOI18N
         jLabel2.setText("Enter Your Name :");
@@ -249,6 +254,10 @@ public class U2_A2_Birthday extends javax.swing.JFrame {
     private void jLabel1MouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel1MouseMoved
         jLabel1.setForeground(Color.red);
     }//GEN-LAST:event_jLabel1MouseMoved
+
+    private void jLabel1MouseWheelMoved(java.awt.event.MouseWheelEvent evt) {//GEN-FIRST:event_jLabel1MouseWheelMoved
+
+    }//GEN-LAST:event_jLabel1MouseWheelMoved
 
     /**
      * @param args the command line arguments
