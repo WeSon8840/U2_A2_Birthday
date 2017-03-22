@@ -18,6 +18,7 @@ public class U2_A2_Birthday extends javax.swing.JFrame {
      */
     public U2_A2_Birthday() {
         initComponents();
+        getContentPane().setBackground(Color.BLACK);
     }
 
     /**
@@ -29,80 +30,97 @@ public class U2_A2_Birthday extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
-        jTextField1 = new javax.swing.JTextField();
-        jTextField2 = new javax.swing.JTextField();
-        jButton1 = new javax.swing.JButton();
-        jLabel4 = new javax.swing.JLabel();
+        jPanel1 = new javax.swing.JPanel();
+        HappyBirthday = new javax.swing.JLabel();
+        NameLabel = new javax.swing.JLabel();
+        BirthdayLable = new javax.swing.JLabel();
+        NameInput = new javax.swing.JTextField();
+        BirthdayInput = new javax.swing.JTextField();
+        EnterButton = new javax.swing.JButton();
+        OutputLable = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
-        jPanel1 = new javax.swing.JPanel();
-        jMenuBar1 = new javax.swing.JMenuBar();
+        MenuBar = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
         jMenuItem1 = new javax.swing.JMenuItem();
         jMenu2 = new javax.swing.JMenu();
 
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 100, Short.MAX_VALUE)
+        );
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 100, Short.MAX_VALUE)
+        );
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setBackground(new java.awt.Color(0, 51, 51));
+        setBackground(new java.awt.Color(0, 0, 0));
         addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
             public void mouseMoved(java.awt.event.MouseEvent evt) {
                 formMouseMoved(evt);
             }
         });
 
-        jLabel1.setFont(new java.awt.Font("Manga Temple", 0, 24)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(255, 102, 102));
-        jLabel1.setText("Happy Birthday ");
-        jLabel1.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
+        HappyBirthday.setFont(new java.awt.Font("Manga Temple", 0, 24)); // NOI18N
+        HappyBirthday.setForeground(new java.awt.Color(255, 153, 153));
+        HappyBirthday.setText("Happy Birthday ");
+        HappyBirthday.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
             public void mouseMoved(java.awt.event.MouseEvent evt) {
-                jLabel1MouseMoved(evt);
+                HappyBirthdayMouseMoved(evt);
             }
         });
-        jLabel1.addMouseWheelListener(new java.awt.event.MouseWheelListener() {
+        HappyBirthday.addMouseWheelListener(new java.awt.event.MouseWheelListener() {
             public void mouseWheelMoved(java.awt.event.MouseWheelEvent evt) {
-                jLabel1MouseWheelMoved(evt);
+                HappyBirthdayMouseWheelMoved(evt);
             }
         });
 
-        jLabel2.setFont(new java.awt.Font("Lint McCree Intl BB", 0, 14)); // NOI18N
-        jLabel2.setText("Enter Your Name :");
+        NameLabel.setFont(new java.awt.Font("Lint McCree Intl BB", 0, 14)); // NOI18N
+        NameLabel.setForeground(new java.awt.Color(153, 255, 153));
+        NameLabel.setText("Enter Your Name :");
 
-        jLabel3.setFont(new java.awt.Font("Lint McCree Intl BB", 0, 14)); // NOI18N
-        jLabel3.setText("Enter Your Birthday :");
+        BirthdayLable.setFont(new java.awt.Font("Lint McCree Intl BB", 0, 14)); // NOI18N
+        BirthdayLable.setForeground(new java.awt.Color(153, 255, 153));
+        BirthdayLable.setText("Enter Your Birthday :");
 
-        jTextField1.setFont(new java.awt.Font("ErasItcTEELig", 0, 14)); // NOI18N
-        jTextField1.addActionListener(new java.awt.event.ActionListener() {
+        NameInput.setFont(new java.awt.Font("ErasItcTEELig", 0, 14)); // NOI18N
+        NameInput.setForeground(new java.awt.Color(14, 14, 228));
+        NameInput.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField1ActionPerformed(evt);
+                NameInputActionPerformed(evt);
             }
         });
 
-        jTextField2.setFont(new java.awt.Font("ErasItcTEELig", 0, 14)); // NOI18N
-        jTextField2.addActionListener(new java.awt.event.ActionListener() {
+        BirthdayInput.setFont(new java.awt.Font("ErasItcTEELig", 0, 14)); // NOI18N
+        BirthdayInput.setForeground(new java.awt.Color(12, 12, 234));
+        BirthdayInput.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField2ActionPerformed(evt);
+                BirthdayInputActionPerformed(evt);
             }
         });
 
-        jButton1.setFont(new java.awt.Font("Lint McCree Intl BB", 0, 12)); // NOI18N
-        jButton1.setText("Enter");
-        jButton1.addMouseListener(new java.awt.event.MouseAdapter() {
+        EnterButton.setFont(new java.awt.Font("Lint McCree Intl BB", 0, 12)); // NOI18N
+        EnterButton.setForeground(new java.awt.Color(0, 0, 255));
+        EnterButton.setText("Enter");
+        EnterButton.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jButton1MouseClicked(evt);
+                EnterButtonMouseClicked(evt);
             }
         });
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        EnterButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                EnterButtonActionPerformed(evt);
             }
         });
 
-        jLabel4.setFont(new java.awt.Font("ErasItcTEEDem", 0, 14)); // NOI18N
+        OutputLable.setFont(new java.awt.Font("ErasItcTEEDem", 0, 14)); // NOI18N
+        OutputLable.setForeground(new java.awt.Color(153, 204, 255));
 
         jLabel5.setFont(new java.awt.Font("Manga Temple", 0, 24)); // NOI18N
-        jLabel5.setForeground(new java.awt.Color(255, 102, 102));
+        jLabel5.setForeground(new java.awt.Color(255, 153, 153));
         jLabel5.setText("!");
         jLabel5.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
             public void mouseMoved(java.awt.event.MouseEvent evt) {
@@ -116,24 +134,13 @@ public class U2_A2_Birthday extends javax.swing.JFrame {
         });
 
         jLabel6.setFont(new java.awt.Font("Manga Temple", 0, 24)); // NOI18N
-        jLabel6.setForeground(new java.awt.Color(255, 102, 102));
+        jLabel6.setForeground(new java.awt.Color(255, 153, 153));
         jLabel6.setText("!");
         jLabel6.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
             public void mouseMoved(java.awt.event.MouseEvent evt) {
                 jLabel6MouseMoved(evt);
             }
         });
-
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 100, Short.MAX_VALUE)
-        );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 100, Short.MAX_VALUE)
-        );
 
         jMenu1.setText("File");
 
@@ -146,12 +153,12 @@ public class U2_A2_Birthday extends javax.swing.JFrame {
         });
         jMenu1.add(jMenuItem1);
 
-        jMenuBar1.add(jMenu1);
+        MenuBar.add(jMenu1);
 
         jMenu2.setText("Edit");
-        jMenuBar1.add(jMenu2);
+        MenuBar.add(jMenu2);
 
-        setJMenuBar(jMenuBar1);
+        setJMenuBar(MenuBar);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -160,80 +167,76 @@ public class U2_A2_Birthday extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addGap(29, 29, 29)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 405, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(OutputLable, javax.swing.GroupLayout.PREFERRED_SIZE, 405, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel3)
-                            .addComponent(jLabel2))
+                            .addComponent(BirthdayLable)
+                            .addComponent(NameLabel))
                         .addGap(30, 30, 30)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jButton1)
+                            .addComponent(EnterButton)
                             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                .addComponent(jTextField2, javax.swing.GroupLayout.DEFAULT_SIZE, 175, Short.MAX_VALUE)
-                                .addComponent(jTextField1)))))
-                .addGap(0, 35, Short.MAX_VALUE))
+                                .addComponent(BirthdayInput, javax.swing.GroupLayout.DEFAULT_SIZE, 175, Short.MAX_VALUE)
+                                .addComponent(NameInput)))))
+                .addGap(0, 0, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(110, 110, 110)
+                .addComponent(HappyBirthday)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jLabel1)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel5)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel6)
-                .addGap(99, 99, 99))
+                .addGap(111, 111, 111))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(22, 22, 22)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel5)
-                            .addComponent(jLabel6)))
-                    .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGap(22, 22, 22)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel2)
-                    .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(HappyBirthday, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel5)
+                    .addComponent(jLabel6))
+                .addGap(35, 35, 35)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(NameLabel)
+                    .addComponent(NameInput, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel3)
-                    .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addComponent(jButton1)
+                    .addComponent(BirthdayLable)
+                    .addComponent(BirthdayInput, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(20, 20, 20)
+                .addComponent(EnterButton)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(27, Short.MAX_VALUE))
+                .addComponent(OutputLable, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(43, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
+    private void NameInputActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_NameInputActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField1ActionPerformed
+    }//GEN-LAST:event_NameInputActionPerformed
 
-    private void jTextField2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField2ActionPerformed
+    private void BirthdayInputActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BirthdayInputActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField2ActionPerformed
+    }//GEN-LAST:event_BirthdayInputActionPerformed
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void EnterButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_EnterButtonActionPerformed
         String name = "";
-        name = jTextField1.getText();
+        name = NameInput.getText();
         String birthday = "";
-        birthday = jTextField2.getText();
-        jLabel4.setText(name + " 's birthday is on " + birthday);
-    }//GEN-LAST:event_jButton1ActionPerformed
+        birthday = BirthdayInput.getText();
+        OutputLable.setText(name + " 's birthday is on " + birthday);
+    }//GEN-LAST:event_EnterButtonActionPerformed
 
     private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1ActionPerformed
         System.exit(0);
     }//GEN-LAST:event_jMenuItem1ActionPerformed
 
-    private void jButton1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton1MouseClicked
-        jButton1.setForeground(Color.gray);
-    }//GEN-LAST:event_jButton1MouseClicked
+    private void EnterButtonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_EnterButtonMouseClicked
+        EnterButton.setForeground(Color.gray);
+    }//GEN-LAST:event_EnterButtonMouseClicked
 
     private void jLabel5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel5MouseClicked
         // TODO add your handling code here:
@@ -251,13 +254,13 @@ public class U2_A2_Birthday extends javax.swing.JFrame {
 
     }//GEN-LAST:event_formMouseMoved
 
-    private void jLabel1MouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel1MouseMoved
-        jLabel1.setForeground(Color.red);
-    }//GEN-LAST:event_jLabel1MouseMoved
+    private void HappyBirthdayMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_HappyBirthdayMouseMoved
+        HappyBirthday.setForeground(Color.red);
+    }//GEN-LAST:event_HappyBirthdayMouseMoved
 
-    private void jLabel1MouseWheelMoved(java.awt.event.MouseWheelEvent evt) {//GEN-FIRST:event_jLabel1MouseWheelMoved
+    private void HappyBirthdayMouseWheelMoved(java.awt.event.MouseWheelEvent evt) {//GEN-FIRST:event_HappyBirthdayMouseWheelMoved
 
-    }//GEN-LAST:event_jLabel1MouseWheelMoved
+    }//GEN-LAST:event_HappyBirthdayMouseWheelMoved
 
     /**
      * @param args the command line arguments
@@ -295,19 +298,19 @@ public class U2_A2_Birthday extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
+    private javax.swing.JTextField BirthdayInput;
+    private javax.swing.JLabel BirthdayLable;
+    private javax.swing.JButton EnterButton;
+    private javax.swing.JLabel HappyBirthday;
+    private javax.swing.JMenuBar MenuBar;
+    private javax.swing.JTextField NameInput;
+    private javax.swing.JLabel NameLabel;
+    private javax.swing.JLabel OutputLable;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu2;
-    private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JMenuItem jMenuItem1;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JTextField jTextField1;
-    private javax.swing.JTextField jTextField2;
     // End of variables declaration//GEN-END:variables
 }
